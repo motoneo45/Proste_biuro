@@ -1,1 +1,29 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plan Biura</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Plan Biura</h1>
+    <div class="office-container">
+        <svg width="500" height="300">
+            <!-- Punkty oznaczające pracowników -->
+            <circle cx="100" cy="100" r="15" class="worker" onclick="showInfo('Jan Kowalski', 'Programista', 'jan@example.com')" />
+            <circle cx="250" cy="150" r="15" class="worker" onclick="showInfo('Anna Nowak', 'Kierownik', 'anna@example.com')" />
+        </svg>
+    </div>
+
+    <!-- Okno z informacjami o pracowniku -->
+    <div id="infoBox" class="info-box">
+        <p id="infoText"></p>
+        <button onclick="closeInfo()">Zamknij</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
 
